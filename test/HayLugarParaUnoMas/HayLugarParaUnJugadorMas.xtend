@@ -12,16 +12,16 @@ class HayLugarParaUnJugadorMas {
 									  )//son 9 jugadores de tipo estandar
 									  .map(nombre | new Jugador(nombre))
 									  .forEach (player | tipo = new Estandar)
-	jugador.tipo = new Estandar
+	jugadorAAgregar.tipo = new Estandar
 	jugadorSolidarioOCondicional.tipo = new Solidario//variando de los tipos de los jugadores como
 													 //Estandar/Solidario o Estandar/Condicional o
 													 //Solidario/Condicional, tendria que poderse
 													 //agregar a Jugador teniendo en cuenta las
 													 //las prioridades que dice el enunciado 
 	partido.inscribir(jugadorSolidarioOCondicional)
-	partido.inscribir(jugador)
+	partido.inscribir(jugadorAAgregar)
 	
-	assertTrue(partido.inscriptos.includes(jugador))
+	assertTrue(partido.inscriptos.includes(jugadorAAgregar))
 	//no se si el mensaje del test de pertenencia es includes, 
 	//member o alguna otra cosa, hay que preguntar eso :P			  
 	 
