@@ -8,7 +8,7 @@ class InscribirJugadorAlPartido {
 		@Test
 		def testCrearJugadorDeCualquierTipoDeInscripcionConfirmaParticipacionEnElPartido
 				var partido = new Partido
-				var jugador = new Jugador
+				var jugador = new Jugador("Henry")
 				
 				partido.inscribir(jugador)//inscribir seria un add de jugador a la lista de inscriptos
 				
