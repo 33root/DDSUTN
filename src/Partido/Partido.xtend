@@ -36,10 +36,10 @@ class Partido {
 	}
 	
 	def void inscribir(Jugador unJugador){
-		var tipoDeInscripcion = unJugador.tipo
-		if(tipoDeInscripcion == new Estandar){ //tambien habria que verificar la cantidad de inscriptos (Esme)
-			inscriptos.add(unJugador)
+		if(this.inscriptos.filter(jugador|jugador.tipo == new Estandar).size == 10)
 		}else{
+		inscriptos.add(unJugador)
+	
 			//Hay que preguntar los tipos de colecciones para ver si podemos solucionar lo de las
 			//prioridades sin tener que hacer muchos ifs, si no hay forma de solucionarlo con un
 			//tipo espesifico de coleccion VAMOS A TENER QUE CAMBIAR EL DISEÑO Y HACER QUE UN GUGADOR
